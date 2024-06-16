@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TileDefinition" load_steps=4 format=3 uid="uid://dex3epp1mht38"]
+
+[ext_resource type="Script" path="res://src/Map/tile_definition.gd" id="1_ylvnj"]
+[ext_resource type="Texture2D" uid="uid://tf5ppdx7351a" path="res://assets/kenney_tiny-dungeon/Tilemap/tilemap_packed.png" id="2_t142w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmc40"]
+atlas = ExtResource("2_t142w")
+region = Rect2(64, 48, 16, 16)
+
+[resource]
+script = ExtResource("1_ylvnj")
+texture = SubResource("AtlasTexture_fmc40")
+color_light = Color(0.702423, 0.702422, 0.702422, 1)
+color_dark = Color(0.272655, 0.272655, 0.272655, 1)
+is_walkable = false
+is_transparent = false
